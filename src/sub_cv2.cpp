@@ -27,7 +27,7 @@ int main() {
     // zenoh
     Config config ;
     cv::Mat frame ;
-    std::string str = "";
+    std::string str ;
     auto session = expect<Session>(open(std::move(config)));
 
     auto subscriber = expect<Subscriber>(
@@ -41,15 +41,6 @@ int main() {
         })
     );
 
-    while (true) {
-        // if (str.empty()) {
-        //     std::cerr << "Error: Unable to read frame from the camera." << std::endl;
-        //     continue ;
-        // }
-        // frame = stringToMat(str) ; 
-        // cv::imshow("Camera", frame);
-        // if (cv::waitKey(1) == 27)
-        //     break;
-    }
+    while (true) { }
     return 0;
 }
