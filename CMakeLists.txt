@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 project(pub LANGUAGES C CXX)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
+
 find_package(zenohc)
 find_package(zenohcxx)
 find_package(OpenCV REQUIRED)
